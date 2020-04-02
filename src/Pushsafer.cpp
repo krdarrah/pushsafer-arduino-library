@@ -35,7 +35,7 @@ String Pushsafer::sendEvent(PushSaferInput input) {
 	bool responseReceived;
   String boundary = "------------------------b8f610217e83e29b";
   if (client->connect(HOST, SSL_PORT)) {
-  /*if (client->connect(HOST, PORT)) {/*
+  /*if (client->connect(HOST, PORT)) {*/
     if (debug) Serial.println("Connected");
     String start_request = "";
     String end_request = "";
